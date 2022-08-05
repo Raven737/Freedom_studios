@@ -48,7 +48,7 @@ export const deleteDist = () => {
 export const sync = () => {
     browsersync.init({
         server: {
-            baseDir: "./dist/"
+            baseDir: "dist"
         },
         port: 3000,
         notify: true
