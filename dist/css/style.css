@@ -1,3 +1,15 @@
+* {
+  outline: 1px solid #f00;
+}
+
+body {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 1110px;
   height: 100vh;
@@ -9,10 +21,53 @@
   max-width: 1440px;
   height: 700px;
   background-image: url(../images/header-bg.png);
+  color: #fff;
+}
+.header_wrap {
+  margin: 100px 70px;
+}
+.header h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  text-transform: uppercase;
+}
+.header a {
+  color: #000;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .logo {
+  display: block;
   width: 143px;
   height: 28px;
-  border: 1px solid #f00;
+  margin-top: 30px;
+  background-image: url("../images/logo.png");
+}
+
+.button {
+  display: inline-block;
+  width: 287px;
+  height: 60px;
+  border-radius: 60px;
+  background-color: #e82e2c;
+  transition-duration: 0.3s;
+}
+.button:hover {
+  background-color: #ebebeb;
+  transition-duration: 0.3s;
+}
+.button_text {
+  line-height: 60px;
+  margin-left: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
 }

@@ -1,0 +1,22 @@
+.button {
+    display: inline-block;
+    width: 287px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: #e82e2c;
+    transition-duration: .3s;
+
+    &:hover {
+        background-color: #ebebeb;
+        transition-duration: .3s;
+    }
+
+    &_text {
+        line-height: 60px;
+        margin-left: 20px;
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
