@@ -55,6 +55,7 @@ export const watch = () => {
     gulp.watch(['#src/*.html'], build);
     gulp.watch(['#src/scss/**/*.scss'], build);
     gulp.watch(['#src/js/**/*.js'], build);
+    gulp.watch(['#src/images/**/*'], build);
     gulp.watch(['#src/fonts/**/*'], build);
 };
 
