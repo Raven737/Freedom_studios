@@ -9,6 +9,10 @@ import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 const sass = gulpSass(dartSass);
 
+export const deleteDist = () => {
+    return del('dist');
+};
+
 export const html = () => {
     return gulp.src(['#src/*.html', '!#src/_*.html'])
         .pipe(fileinclude())
@@ -41,8 +45,17 @@ export const images = () => {
         .pipe(browsersync.stream())
 }
 
-export const deleteDist = () => {
-    return del('dist');
+export const fonts = () => {
+    return gulp.src('#src/fonts/**/*')
+        .pipe(gulp.dest('dist/fonts'))
+        .pipe(browsersync.stream())
+}
+
+export const watch = () => {
+    gulp.watch(['#src/*.html'], build);
+    gulp.watch(['#src/scss/**/*.scss'], build);
+    gulp.watch(['#src/js/**/*.js'], build);
+    gulp.watch(['#src/fonts/**/*'], build);
 };
 
 export const sync = () => {
@@ -55,12 +68,6 @@ export const sync = () => {
     })
 };
 
-export const watch = () => {
-    gulp.watch(['#src/*.html'], build);
-    gulp.watch(['#src/scss/**/*.scss'], build);
-    gulp.watch(['#src/js/**/*.js'], build);
-};
-
-const build = gulp.series(deleteDist, gulp.parallel(html, css, js, images));
+const build = gulp.series(deleteDist, gulp.parallel(html, css, js, images, fonts));
 
 export default gulp.series(build, gulp.parallel(watch, sync));
