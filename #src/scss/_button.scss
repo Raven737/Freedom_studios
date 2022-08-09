@@ -7,16 +7,29 @@
     transition-duration: .3s;
 
     &:hover {
-        background-color: #ebebeb;
+        background-color: #D5B227;
         transition-duration: .3s;
     }
 
     &_text {
-        line-height: 60px;
-        margin-left: 20px;
+        display: inline-block;
+        margin: 20px 10px 20px 20px;
+        font-family: 'Barlow';
+        font-style: normal;
         font-weight: 700;
         font-size: 16px;
+        line-height: 20px;
         text-transform: uppercase;
-        color: #fff;
+        color: #FFFFFF;
+    }
+
+    &_arrow {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-bottom: -4px;
+        background-image: url(../images/vector.svg);
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }

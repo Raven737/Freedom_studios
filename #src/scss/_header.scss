@@ -1,19 +1,29 @@
 .header {
     max-width: 1440px;
-    height: 700px;
+    max-height: 700px;
     background-image: url(../images/header-bg.png);
     color: #fff;
 
     &_wrap {
+        width: 746px;
         margin: 100px 70px;
     }
 
     & h1 {
+        font-family: 'Barlow';
         font-style: normal;
         font-weight: 700;
         font-size: 64px;
         line-height: 75px;
         text-transform: uppercase;
+    }
+
+    & h3 {
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
     }
 
     & a {
@@ -22,6 +32,8 @@
 }
 
 .text {
+    font-family: 'Barlow';
+    font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 30px;
