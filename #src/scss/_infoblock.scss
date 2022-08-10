@@ -1,0 +1,17 @@
+.infoblock {
+    height: 200px;
+    background-color: #191c1f;
+
+    &_container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.infobox {
+
+    &_icon {
+        width: 40px;
+        height: 40px;
+    }
+}
