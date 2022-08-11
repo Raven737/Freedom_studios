@@ -9,9 +9,44 @@
 }
 
 .infobox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &_item {
+        max-width: 255px;
+        // height: 80px;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        text-transform: uppercase;
+    }
 
     &_icon {
         width: 40px;
         height: 40px;
     }
+
+    &_text {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+.icon1 {
+    background-image: url(../images/icon-calendar.svg);
+}
+
+.icon2 {
+    background-image: url(../images/icon-mentorship.svg);
+}
+
+.icon3 {
+    background-image: url(../images/icon-book.svg);
 }

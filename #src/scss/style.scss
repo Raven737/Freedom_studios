@@ -1,10 +1,14 @@
 * {
-    // outline: 1px solid #f00;
+    outline: 1px solid #f00;
 }
 
 body {
     font-family: 'Barlow', sans-serif;
     font-family: 'Barlow Condensed', sans-serif;
+
+    ul {
+        padding: 0;
+    }
 }
 
 a {

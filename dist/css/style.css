@@ -1,6 +1,13 @@
+* {
+  outline: 1px solid #f00;
+}
+
 body {
   font-family: "Barlow", sans-serif;
   font-family: "Barlow Condensed", sans-serif;
+}
+body ul {
+  padding: 0;
 }
 
 a {
@@ -67,9 +74,43 @@ a {
   justify-content: space-between;
 }
 
+.infobox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.infobox_item {
+  max-width: 255px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
 .infobox_icon {
   width: 40px;
   height: 40px;
+}
+.infobox_text {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.icon1 {
+  background-image: url(../images/icon-calendar.svg);
+}
+
+.icon2 {
+  background-image: url(../images/icon-mentorship.svg);
+}
+
+.icon3 {
+  background-image: url(../images/icon-book.svg);
 }
 
 .button {
