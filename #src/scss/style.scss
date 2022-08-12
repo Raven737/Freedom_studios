@@ -1,5 +1,7 @@
 * {
-    outline: 1px solid #f00;
+    margin: 0;
+    padding: 0;
+    // outline: 1px solid #f00;
 }
 
 body {
@@ -7,6 +9,7 @@ body {
     font-family: 'Barlow Condensed', sans-serif;
 
     ul {
+        margin: 0;
         padding: 0;
     }
 }

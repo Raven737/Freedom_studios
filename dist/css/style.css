@@ -1,5 +1,6 @@
 * {
-  outline: 1px solid #f00;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -7,6 +8,7 @@ body {
   font-family: "Barlow Condensed", sans-serif;
 }
 body ul {
+  margin: 0;
   padding: 0;
 }
 
@@ -17,12 +19,12 @@ a {
 .container {
   max-width: 1110px;
   margin: 0 165px;
-  border: 1px solid #f00;
 }
 
 .header {
   max-width: 1440px;
   max-height: 700px;
+  padding-top: 30px;
   background-image: url(../images/header-bg.png);
   color: #fff;
 }
@@ -45,9 +47,6 @@ a {
   font-size: 24px;
   line-height: 30px;
 }
-.header a {
-  color: #000;
-}
 
 .text {
   font-family: "Barlow";
@@ -61,7 +60,6 @@ a {
   display: block;
   width: 143px;
   height: 28px;
-  margin-top: 30px;
   background-image: url("../images/logo.png");
 }
 
@@ -70,8 +68,9 @@ a {
   background-color: #191c1f;
 }
 .infoblock_container {
+  height: 100%;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .infobox {
@@ -81,7 +80,6 @@ a {
 }
 .infobox_item {
   max-width: 255px;
-  background-color: blue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,9 +90,15 @@ a {
   line-height: 40px;
   text-transform: uppercase;
 }
+.infobox_link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
 .infobox_icon {
   width: 40px;
   height: 40px;
+  margin-right: 20px;
 }
 .infobox_text {
   font-size: 24px;
@@ -117,12 +121,13 @@ a {
   display: inline-block;
   width: 287px;
   height: 60px;
+  margin-top: 30px;
   border-radius: 60px;
   background-color: #e82e2c;
   transition-duration: 0.3s;
 }
 .button:hover {
-  background-color: #D5B227;
+  background-color: #27d584;
   transition-duration: 0.3s;
 }
 .button_text {

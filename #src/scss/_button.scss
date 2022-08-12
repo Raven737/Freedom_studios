@@ -2,12 +2,13 @@
     display: inline-block;
     width: 287px;
     height: 60px;
+    margin-top: 30px;
     border-radius: 60px;
     background-color: #e82e2c;
     transition-duration: .3s;
 
     &:hover {
-        background-color: #D5B227;
+        background-color: #27d584;
         transition-duration: .3s;
     }
 
