@@ -71,6 +71,7 @@ export const sync = () => {
     })
 };
 
-const build = gulp.series(deleteDist, gulp.parallel(html, css, js, images, fonts));
+const creation = gulp.series(deleteDist, gulp.parallel(html, css, js, images, fonts));
+const observation = gulp.parallel(watch, sync);
 
-export default gulp.series(build, gulp.parallel(watch, sync));
+export default gulp.series(creation, observation);
