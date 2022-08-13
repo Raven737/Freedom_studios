@@ -3,6 +3,7 @@ import del from 'del';
 import gulp from 'gulp';
 import cssmin from 'gulp-cssmin';
 import fileinclude from 'gulp-file-include';
+import imagemin from 'gulp-imagemin';
 import rename from 'gulp-rename';
 import uglify from 'gulp-uglify';
 import dartSass from 'sass';
@@ -41,6 +42,7 @@ export const js = () => {
 
 export const images = () => {
     return gulp.src('#src/images/**/*')
+        .pipe(imagemin())
         .pipe(gulp.dest('dist/images'))
         .pipe(browsersync.stream())
 }
