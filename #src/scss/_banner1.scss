@@ -1,0 +1,46 @@
+.banner1 {
+    width: 1440px;
+    height: 600px;
+    background-color: #1f2327;
+
+    &_container {
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &_img {
+        width: 540px;
+        height: 376px;
+        border: 1px solid #f00;
+    }
+
+    &_info {
+        width: 400px;
+        height: 312px;
+        margin-left: 125px;
+        border: 1px solid #f00;
+    }
+
+    &_title {
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    &_text {
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+

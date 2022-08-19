@@ -150,3 +150,44 @@ a {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.banner1 {
+  width: 1440px;
+  height: 600px;
+  background-color: #1f2327;
+}
+.banner1_container {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.banner1_img {
+  width: 540px;
+  height: 376px;
+  border: 1px solid #f00;
+}
+.banner1_info {
+  width: 400px;
+  height: 312px;
+  margin-left: 125px;
+  border: 1px solid #f00;
+}
+.banner1_title {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.banner1_text {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #fff;
+}
